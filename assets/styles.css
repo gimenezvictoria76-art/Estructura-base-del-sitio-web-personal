@@ -1,0 +1,67 @@
+   /* ===== ESTILOS GENERALES ===== */
+body {
+    background-color: #F1FAEE;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: #62d3f8;
+    margin: 0;
+    text-align: center;
+}
+
+/* ===== MAIN ===== */
+main {
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+
+}
+
+/* ===== TIPOGRAFÍA ===== */
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+img {
+    border-radius: 10px;
+}
+
+/* ===== NAVEGACIÓN ===== */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+}
+    a {
+    color: #264653;
+    text-decoration: none;
+    }
+    
+    a:hover {
+    text-decoration: underline;
+    }
+
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #264653;
+    color: #F1FAEE;
+    padding: 20px;
+    text-align: center;
+}
