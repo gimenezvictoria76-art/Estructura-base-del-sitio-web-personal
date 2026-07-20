@@ -97,3 +97,129 @@ footer a {
 footer ul {
     list-style: none;
 }
+
+/*===Maquetación Avanzada de Grilla y Responsividad===*/
+.grid-principal {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 20px;                  
+  padding: 20px;
+  
+ 
+  grid-template-areas: 
+    "sobre-mi"
+    "foto"
+    "habilidades";
+}
+
+.bloque-sobre-mi {
+  grid-area: sobre-mi;
+}
+
+.bloque-foto {
+  grid-area: foto;
+  text-align: center; 
+}
+
+.bloque-habilidades {
+  grid-area: habilidades;
+}
+
+.foto-perfil {
+  max-width: 100%;
+  width: 150px;
+  height: auto;
+  border-radius: 10px; /* Un toque estético */
+}
+
+
+@media (min-width: 1024px) {
+  .grid-principal {
+    /* En pantalla grande, dividimos el espacio en 2 columnas */
+    /* La columna de la izquierda es más ancha (2fr) y la derecha más angosta (1fr) */
+    grid-template-columns: 2fr 1fr;
+    gap: 40px; /* Aumentamos el espaciado en pantallas de escritorio */
+    
+    /* Reorganizamos las áreas: 
+       - "sobre-mi" ocupa toda la columna de la izquierda.
+       - La foto y las habilidades se apilan en la columna derecha. */
+    grid-template-areas: 
+      "sobre-mi foto"
+      "sobre-mi habilidades";
+  }
+
+  .bloque-foto {
+    text-align: left; /* Alineamos a la izquierda en pantallas grandes */
+  }
+}
+
+/*ESTRUCTURAS Y COLUMNAS*/
+
+/* --- Estrura para Celular (Mobile-First) --- */
+.grid-habilidades {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    padding: 20px;
+    
+    grid-template-areas: 
+        "titulo"
+        "lista"
+        "foto";
+}
+
+.titulo-habilidades {
+    grid-area: titulo;
+}
+
+.lista-habilidades {
+    grid-area: lista;
+}
+
+.foto-habilidades {
+    grid-area: foto;
+    text-align: center;
+}
+
+.foto-hab {
+    max-width: 100%;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* --- Estructura para Tablet (Desde 768px) --- */
+@media (min-width: 768px) {
+    .grid-habilidades {
+        grid-template-columns: 1fr 1fr; 
+        gap: 30px;
+        grid-template-areas: 
+            "titulo titulo"
+            "lista  foto";
+    }
+    
+    .foto-habilidades {
+        text-align: right; 
+    }
+}
+
+/* --- Estructura de Escritorio (Desde 1024px) --- */
+@media (min-width: 1024px) {
+    .grid-habilidades {
+        grid-template-columns: 1.2fr 1fr; 
+        gap: 50px;
+        align-items: center; 
+        
+    
+        max-width: 800px;
+        margin: 40px auto; 
+    }
+
+    .foto-habilidades {
+        text-align: center; 
+    }
+    
+    .lista-habilidades {
+        justify-self: center; 
+    }
+}

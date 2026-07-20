@@ -4,3 +4,6 @@ Thumbs.db
 
 # Ignorar dependencias
 node_modules/
+
+//Variables
+.env
