@@ -1,7 +1,31 @@
-  * {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* --- Estilos personalizados para el Navbar --- */
+.mi-nav-personalizada {
+    background-color: #f1f8f3 !important;
+    padding: 15px 20px;
+}
+
+.mi-nav-personalizada .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+}
+
+.mi-nav-personalizada .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #333333 !important;
+}
+
+/* Color de Mouse */
+.mi-nav-personalizada .nav-link:hover {
+    color: #000000 !important; 
 }
   
 /* ===== ESTILOS GENERALES Y ENLACES ===== */
@@ -18,15 +42,6 @@ a {
   
 a:hover {
     text-decoration: underline;
-}
-
-/* ===== HEADER ===== */
-header {
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
 }
 
 /* ===== MAIN ===== */
@@ -46,7 +61,6 @@ main section {
     padding: 20px;
     gap: 15px;
 }
-
 
 main ul {
     padding-left: 20px;
@@ -73,12 +87,8 @@ img {
 }
 
 /* ===== NAVEGACIÓN ===== */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
+.navbar-nav {
+    display: flex !important;
 }
 
 /* ===== FOOTER ===== */
@@ -98,70 +108,60 @@ footer ul {
     list-style: none;
 }
 
-/*===Maquetación Avanzada de Grilla y Responsividad===*/
+/* === Maquetación y Responsividad (Principal) === */
 .grid-principal {
-  display: grid;
-  grid-template-columns: 1fr; 
-  gap: 20px;                  
-  padding: 20px;
-  
- 
-  grid-template-areas: 
-    "sobre-mi"
-    "foto"
-    "habilidades";
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;                  
+    padding: 20px;
+    grid-template-areas: 
+        "sobre-mi"
+        "foto"
+        "habilidades";
 }
 
 .bloque-sobre-mi {
-  grid-area: sobre-mi;
+    grid-area: sobre-mi;
 }
 
 .bloque-foto {
-  grid-area: foto;
-  text-align: center; 
+    grid-area: foto;
+    text-align: center; 
 }
 
 .bloque-habilidades {
-  grid-area: habilidades;
+    grid-area: habilidades;
 }
 
 .foto-perfil {
-  max-width: 100%;
-  width: 150px;
-  height: auto;
-  border-radius: 10px; /* Un toque estético */
+    max-width: 100%;
+    width: 150px;
+    height: auto;
+    border-radius: 10px; 
 }
-
 
 @media (min-width: 1024px) {
-  .grid-principal {
-    /* En pantalla grande, dividimos el espacio en 2 columnas */
-    /* La columna de la izquierda es más ancha (2fr) y la derecha más angosta (1fr) */
-    grid-template-columns: 2fr 1fr;
-    gap: 40px; /* Aumentamos el espaciado en pantallas de escritorio */
-    
-    /* Reorganizamos las áreas: 
-       - "sobre-mi" ocupa toda la columna de la izquierda.
-       - La foto y las habilidades se apilan en la columna derecha. */
-    grid-template-areas: 
-      "sobre-mi foto"
-      "sobre-mi habilidades";
-  }
+    .grid-principal {
+        grid-template-columns: 2fr 1fr;
+        gap: 40px; 
+        grid-template-areas: 
+            "sobre-mi foto"
+            "sobre-mi habilidades";
+    }
 
-  .bloque-foto {
-    text-align: left; /* Alineamos a la izquierda en pantallas grandes */
-  }
+    .bloque-foto {
+        text-align: left; 
+    }
 }
 
-/*ESTRUCTURAS Y COLUMNAS*/
+/* === Estructura de Grilla para Habilidades === */
 
-/* --- Estrura para Celular (Mobile-First) --- */
+/* Celular (Mobile-First) */
 .grid-habilidades {
     display: grid;
     grid-template-columns: 1fr; 
     gap: 20px;
     padding: 20px;
-    
     grid-template-areas: 
         "titulo"
         "lista"
@@ -188,7 +188,7 @@ footer ul {
     border-radius: 10px;
 }
 
-/* --- Estructura para Tablet (Desde 768px) --- */
+/* Tablet (Desde 768px) */
 @media (min-width: 768px) {
     .grid-habilidades {
         grid-template-columns: 1fr 1fr; 
@@ -203,23 +203,25 @@ footer ul {
     }
 }
 
-/* --- Estructura de Escritorio (Desde 1024px) --- */
+/* Escritorio (Desde 1024px) */
 @media (min-width: 1024px) {
     .grid-habilidades {
-        grid-template-columns: 1.2fr 1fr; 
-        gap: 50px;
-        align-items: center; 
-        
-    
-        max-width: 800px;
-        margin: 40px auto; 
+        grid-template-columns: 1fr 1fr; 
+        gap: 40px;
+        align-items: start; 
+        max-width: 100%;
+        margin: 0 auto; 
+        grid-template-areas: 
+            "titulo titulo"
+            "lista  foto";
+    }
+
+    .lista-habilidades {
+        justify-self: start; 
+        padding-top: 10px;
     }
 
     .foto-habilidades {
         text-align: center; 
-    }
-    
-    .lista-habilidades {
-        justify-self: center; 
     }
 }
