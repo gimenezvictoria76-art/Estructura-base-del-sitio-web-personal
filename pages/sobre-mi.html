@@ -13,13 +13,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <title>Victoria Gimenez - Inicio</title>
+  <title>Victoria Gimenez - Sobre Mí</title>
 </head>
 <body>
   <header>
     <nav class="navbar navbar-expand-lg mi-nav-personalizada">
       <div class="container-fluid">
-        <!-- Nombre de marca apunta a la raíz (el index verdadero) -->
         <a class="navbar-brand" href="../index.html">Victoria Gimenez</a>
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +31,7 @@
               <a class="nav-link" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="sobre-mi.html">Sobre mí</a>
+              <a class="nav-link active" aria-current="page" href="sobre-mi.html">Sobre mí</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="habilidades.html">Habilidades</a>
@@ -49,56 +48,95 @@
     </nav>
   </header>
 
-<main>
+  
+  <main class="container py-5">
 
-  <!-- SECCIÓN 1: Sobre mí -->
-  <section>
-    <h2>Sobre mí</h2>
-    
-    <figure>
-      <img src="../img/proyectos.png" alt="Foto de Victoria Gimenez" width="150">
-      <figcaption>Proyectos actuales.</figcaption>
-    </figure>
+    <!-- SECCIÓN 1: Sobre mí (dos columnas) -->
+    <section class="mb-5">
+      <h2 class="text-center mb-4">Sobre mí</h2>
+      
+      <div class="row align-items-center gy-4">
+        
+        <div class="col-12 col-lg-4 text-center">
+          <figure class="figure">
+            <img src="../img/proyectos.png" alt="Foto de Victoria Gimenez" class="img-fluid rounded-circle shadow" style="max-width: 200px;">
+            <figcaption class="figure-caption text-center mt-2">Proyectos actuales.</figcaption>
+          </figure>
+        </div>
 
-    <article>
-      <p>
-        ¡Hola! Soy Victoria Gimenez. Soy una persona activa y comprometida, apasionada 
-        por el deporte y el aprendizaje continuo. Actualmente estoy desarrollando mis 
-        conocimientos en programación y diseño web, combinando la creatividad con la búsqueda
-        constante de nuevos desafíos.
-      </p>
-    </article>
-  </section>
+        
+        <div class="col-12 col-lg-8">
+          <article class="p-3 bg-light rounded shadow-sm">
+            <p class="lead text-secondary">
+              ¡Hola! Soy Victoria Gimenez. Soy una persona activa y comprometida, apasionada 
+              por el deporte y el aprendizaje continuo. Actualmente estoy desarrollando mis 
+              conocimientos en programación y diseño web, combinando la creatividad con la búsqueda
+              constante de nuevos desafíos.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <!-- SECCIÓN 2: Habilidades -->
-  <section>
-    <h2>Habilidades</h2>
-    <ul>
-      <li>Trabajo en equipo</li>
-      <li>Aprendizaje rápido</li>
-      <li>Responsabilidad y compromiso</li>
-    </ul>
-  </section> <!-- Cierra sección 2 -->
+    <!-- SECCIÓN 2: Habilidades Cards  -->
+    <section class="mt-5">
+      <h2 class="text-center mb-4">Mis Valores y Habilidades</h2>
+      
+      <div class="row g-4">
+        <!-- Habilidad 1 -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100 text-center border-0 shadow-sm bg-light">
+            <div class="card-body">
+              <h3 class="h5 card-title text-success">🤝 Trabajo en equipo</h3>
+              <p class="card-text text-muted">Colaboración efectiva y comunicación clara para lograr objetivos comunes.</p>
+            </div>
+          </div>
+        </div>
 
-</main> <!-- El padre grandote termina acá, justo antes del footer -->
-    <footer>
-    <p>© 2026 Victoria Gimenez</p>
-    <h3>Contacto</h3>
+        <!-- Habilidad 2 -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100 text-center border-0 shadow-sm bg-light">
+            <div class="card-body">
+              <h3 class="h5 card-title text-success">⚡ Aprendizaje rápido</h3>
+              <p class="card-text text-muted">Adaptabilidad constante a nuevas tecnologías y metodologías de trabajo.</p>
+            </div>
+          </div>
+        </div>
 
-  <ul>
-    <li>
-      <a href="https://www.instagram.com/vickygimenez_" target="_blank">
-        Instagram
-      </a>
-    </li>
+        <!-- Habilidad 3 -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100 text-center border-0 shadow-sm bg-light">
+            <div class="card-body">
+              <h3 class="h5 card-title text-success">🎯 Responsabilidad</h3>
+              <p class="card-text text-muted">Compromiso absoluto con la calidad y los plazos de entrega de cada proyecto.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <li>
-      <a href="https://github.com/gimenezvictoria76-art" target="_blank">
-        GitHub
-      </a>
-    </li>
-  </ul>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </main>
+
+  <footer class="bg-light text-center py-4 mt-5">
+    <div class="container">
+      <p class="mb-2">© 2026 Victoria Gimenez</p>
+      <h3 class="h5 mb-3">Contacto</h3>
+
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item mx-3">
+          <a href="https://www.instagram.com/vickygimenez_" target="_blank" class="text-decoration-none text-dark">
+            Instagram
+          </a>
+        </li>
+        <li class="list-inline-item mx-3">
+          <a href="https://github.com/gimenezvictoria76-art" target="_blank" class="text-decoration-none text-dark">
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
