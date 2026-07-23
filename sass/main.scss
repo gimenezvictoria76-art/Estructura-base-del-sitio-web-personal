@@ -1,14 +1,16 @@
-/Comentario css*/
+// 1. Utilities (Siempre primero para que las variables estén disponibles para los demás)
+@use "utilities/variables" as *;
+@use "utilities/mixins";
 
-//Comentario Sass 
+// 2. Base
+@use "base/tipografia";
+@use "base/base";
 
-//Nesting 
+// 3. Layout
+@use "layout/nav";
+@use "layout/footer";
+@use "layout/header";
 
-/*HEADER*/
-header {
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
+// 4. Components
+@use "components/cards";
+@use "components/buttons";

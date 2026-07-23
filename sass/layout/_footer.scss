@@ -1,0 +1,15 @@
+footer {
+  background-color: $color-claro !important;
+  padding: 20px 0;
+  width: 100%;
+  
+  p, span, small {
+    color: $color-oscuro !important;
+    margin-bottom: 0;
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+    color: $color-primario !important;
+  }
+}
