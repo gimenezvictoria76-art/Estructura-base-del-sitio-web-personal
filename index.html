@@ -8,7 +8,7 @@
   <!-- CSS DE BOOTSTRAP-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   
-  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="assets/main.css"> 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -19,35 +19,28 @@
 <body>
   
   <header>
-    <nav class="navbar navbar-expand-lg mi-nav-personalizada">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Victoria Gimenez</a>
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+        
+        <a class="navbar-brand" href="/index.html">Victoria Gimenez</a>
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
-        
+
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/sobre-mi.html">Sobre mí</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/habilidades.html">Habilidades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/proyectos.html">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/contacto.html">Contacto</a>
-            </li>
-          </ul>
+           <ul class="navbar-nav ms-auto">
+    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+    <li class="nav-item"><a class="nav-link" href="pages/sobre-mi.html">Sobre mí</a></li>
+    <li class="nav-item"><a class="nav-link" href="pages/habilidades.html">Habilidades</a></li>
+    <a class="nav-link" href="./pages/proyectos.html">Proyectos</a>
+    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+
+
+</ul>
         </div>
-      </div>
-    </nav>
+    </div>
+</nav>
   </header>
 
   
@@ -76,13 +69,15 @@
         <!-- Carousel de fotos -->
         <div id="carouselPortfolio" class="carousel slide shadow rounded" data-bs-ride="carousel">
           
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="pages/sobre-mi.html">Sobre mí</a></li>
+        <li class="nav-item"><a class="nav-link" href="pages/habilidades.html">Habilidades</a></li>
+        <li class="nav-item"><a class="nav-link" href="pages/proyectos.html">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+    </ul>
+</div>
 
           <!-- Fotos del carrusel -->
           <div class="carousel-inner rounded">
@@ -128,25 +123,25 @@
     </div> <!-- Cierre del row -->
   </main>
 
-  <footer class="bg-light text-center py-4 mt-5">
+  <footer class="text-center py-4 mt-5">
     <div class="container">
       <p class="mb-2">© 2026 Victoria Gimenez</p>
       <h3 class="h5 mb-3">Contacto</h3>
 
       <ul class="list-inline mb-0">
         <li class="list-inline-item mx-3">
-          <a href="https://www.instagram.com/vickygimenez_" target="_blank" class="text-decoration-none text-dark">
+          <a href="https://www.instagram.com/vickygimenez_" target="_blank" class="text-decoration-none">
             Instagram
           </a>
         </li>
         <li class="list-inline-item mx-3">
-          <a href="https://github.com/gimenezvictoria76-art" target="_blank" class="text-decoration-none text-dark">
+          <a href="https://github.com/gimenezvictoria76-art" target="_blank" class="text-decoration-none">
             GitHub
           </a>
         </li>
       </ul>
     </div>
-  </footer class="bg-light text-center py-4 mt-5">
+</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

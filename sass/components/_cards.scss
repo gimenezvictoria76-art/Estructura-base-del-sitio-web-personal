@@ -1,0 +1,14 @@
+@use "../utilities/variables" as *;
+.card {
+  box-shadow: $shadow-suave;
+  border-radius: $borde-redondeado;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px); 
+  }
+
+  .card-title {
+    font-weight: 600;
+  }
+}

@@ -1,7 +1,22 @@
+@use "../utilities/variables" as *;
 footer {
   background-color: $color-claro !important;
   padding: 20px 0;
   width: 100%;
+  footer {
+  background-color: #f8f9fa !important;
+  padding: 20px 0;
+  width: 100%;
+}
+footer p, footer span, footer small {
+  color: #212529 !important;
+  margin-bottom: 0;
+}
+footer h3 {
+  font-size: 1.1rem;
+  color: #3b82f6 !important;
+}
+
   
   p, span, small {
     color: $color-oscuro !important;

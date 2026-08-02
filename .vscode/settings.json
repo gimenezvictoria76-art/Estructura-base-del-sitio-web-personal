@@ -1,0 +1,11 @@
+{
+    "liveServer.settings.multiRootWorkspaceName": "Estructura base del sitio web personal",
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "~/../assets"
+        }
+    ],
+    "liveSassCompile.settings.generateMap": true
+}
