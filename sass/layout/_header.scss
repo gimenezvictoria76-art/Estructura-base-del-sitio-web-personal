@@ -1,1 +1,13 @@
-// Estilos específicos del header
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+header {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: $shadow-suave;
+  @include transicion-suave(all, 0.3s);
+
+  @include responder-a(mobile) {
+    box-shadow: none;
+  }
+}

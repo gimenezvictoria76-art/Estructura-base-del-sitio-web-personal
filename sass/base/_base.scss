@@ -1,8 +1,34 @@
+@use "../utilities/variables" as *;
+
 body, h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
 }
 
 h2 {
   font-weight: 700;
-  color: #212529;
+  color: $color-oscuro; // Usamos la variable en lugar de #212529
+}
+
+// Giro 360 en img contacto
+@keyframes giroMoneda {
+  from {
+    transform: perspective(600px) rotateY(0deg);
+  }
+  to {
+    transform: perspective(600px) rotateY(360deg);
+  }
+}
+
+.imagen-contacto {
+  width: 100%;      
+  max-width: 400px;  
+  display: block;
+  margin: 0 auto;
+
+  animation: giroMoneda 1.5s ease-in-out;
+  transition: transform 1s ease-in-out;
+  
+  &:hover {
+    transform: perspective(600px) rotateY(360deg);
+  }
 }

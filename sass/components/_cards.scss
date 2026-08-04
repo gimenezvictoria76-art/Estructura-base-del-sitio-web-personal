@@ -1,8 +1,12 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *; 
+
 .card {
   box-shadow: $shadow-suave;
   border-radius: $borde-redondeado;
-  transition: transform 0.2s ease-in-out;
+  
+  
+  @include transicion-suave(transform, 0.2s);
 
   &:hover {
     transform: translateY(-5px); 
@@ -10,5 +14,10 @@
 
   .card-title {
     font-weight: 600;
+  }
+
+  
+  @include responder-a(mobile) {
+    margin-bottom: 1rem;
   }
 }

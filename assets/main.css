@@ -7,13 +7,24 @@ h2 {
   color: #212529;
 }
 
-body, h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
+@keyframes giroMoneda {
+  from {
+    transform: perspective(600px) rotateY(0deg);
+  }
+  to {
+    transform: perspective(600px) rotateY(360deg);
+  }
 }
-
-h2 {
-  font-weight: 700;
-  color: #212529;
+.imagen-contacto {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+  animation: giroMoneda 1.5s ease-in-out;
+  transition: transform 1s ease-in-out;
+}
+.imagen-contacto:hover {
+  transform: perspective(600px) rotateY(360deg);
 }
 
 .navbar-custom {
@@ -40,19 +51,6 @@ footer {
   padding: 20px 0;
   width: 100%;
 }
-footer footer {
-  background-color: #f8f9fa !important;
-  padding: 20px 0;
-  width: 100%;
-}
-footer footer p, footer footer span, footer footer small {
-  color: #212529 !important;
-  margin-bottom: 0;
-}
-footer footer h3 {
-  font-size: 1.1rem;
-  color: #3b82f6 !important;
-}
 footer p, footer span, footer small {
   color: #212529 !important;
   margin-bottom: 0;
@@ -60,6 +58,18 @@ footer p, footer span, footer small {
 footer h3 {
   font-size: 1.1rem;
   color: #3b82f6 !important;
+}
+
+header {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 576px) {
+  header {
+    box-shadow: none;
+  }
 }
 
 .card {
@@ -72,4 +82,9 @@ footer h3 {
 }
 .card .card-title {
   font-weight: 600;
+}
+@media (max-width: 576px) {
+  .card {
+    margin-bottom: 1rem;
+  }
 }/*# sourceMappingURL=main.css.map */
