@@ -16,6 +16,9 @@
   transition: $propiedad $tiempo ease-in-out;
 }
 
+// Variables
+$espacio-base: 1rem;
+
 // MIXIN PARA FLEXBOX 
 @mixin flex-center($direction: row, $justify: center, $align: center) {
   display: flex;

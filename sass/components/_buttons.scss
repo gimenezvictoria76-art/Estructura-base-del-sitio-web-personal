@@ -1,1 +1,42 @@
-// Estilos personalizados 
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// 1. PLACEHOLDER CON OPERADOR ARITMÉTICO
+%btn-base {
+  display: inline-block;
+  padding: ($espacio-base * 0.75) ($espacio-base * 1.5); // Operación aritmética con variable
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  @include transicion-suave(all, 0.3s); // Invoca mixin
+}
+
+// 2. USO DE @extend CON PLACEHOLDER
+.btn-principal {
+  @extend %btn-base;
+  background-color: $color-primario;
+  color: #ffffff;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  @include responder-a(mobile) { // Invoca mixin
+    width: 100%;
+  }
+}
+
+.btn-secundario {
+  @extend %btn-base;
+  background-color: transparent;
+  border: 2px solid $color-primario;
+  color: $color-primario;
+
+  &:hover {
+    background-color: $color-primario;
+    color: #ffffff;
+  }
+}

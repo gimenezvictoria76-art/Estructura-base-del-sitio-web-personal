@@ -3,11 +3,10 @@
 
 header {
   width: 100%;
-  background-color: #ffffff;
-  box-shadow: $shadow-suave;
+  padding: $espacio-base * 0.8; // Operador aritmético
   @include transicion-suave(all, 0.3s);
 
-  @include responder-a(mobile) {
-    box-shadow: none;
+  @include responder-a(mobile) { // Invoca mixin
+    padding: $espacio-base * 0.4;
   }
 }

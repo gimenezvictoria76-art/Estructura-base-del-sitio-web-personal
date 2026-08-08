@@ -1,23 +1,17 @@
 @use "../utilities/variables" as *;
-@use "../utilities/mixins" as *; 
+@use "../utilities/mixins" as *;
 
 .card {
   box-shadow: $shadow-suave;
   border-radius: $borde-redondeado;
-  
-  
-  @include transicion-suave(transform, 0.2s);
+  padding: $espacio-base * 1.2; // Operador aritmético
+  @include transicion-suave(transform, 0.3s); // Invoca mixin
 
   &:hover {
-    transform: translateY(-5px); 
+    transform: translateY(-5px);
   }
 
-  .card-title {
-    font-weight: 600;
-  }
-
-  
-  @include responder-a(mobile) {
-    margin-bottom: 1rem;
+  @include responder-a(mobile) { // Invoca mixin
+    margin-bottom: $espacio-base * 1;
   }
 }
