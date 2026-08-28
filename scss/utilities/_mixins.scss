@@ -1,28 +1,43 @@
 // MIXIN DE MEDIA QUERIES CON PARÁMETRO
+
 @mixin responder-a($pantalla) {
+
   @if $pantalla == mobile {
-    @media (max-width: 576px) { @content; }
-  }
-  @else if $pantalla == tablet {
-    @media (max-width: 768px) { @content; }
-  }
-  @else if $pantalla == laptop {
-    @media (max-width: 1024px) { @content; }
+
+    @media (max-width: 576px) {
+      @content;
+    }
+
+  } @else if $pantalla == tablet {
+
+    @media (max-width: 768px) {
+      @content;
+    }
+
+  } @else if $pantalla == laptop {
+
+    @media (max-width: 1024px) {
+      @content;
+    }
+
   }
 }
 
 // MIXIN CON PARÁMETROS PARA TRANSICIONES
+
 @mixin transicion-suave($propiedad: all, $tiempo: 0.3s) {
+
   transition: $propiedad $tiempo ease-in-out;
+
 }
 
-// Variables
-$espacio-base: 1rem;
+// MIXIN PARA FLEXBOX
 
-// MIXIN PARA FLEXBOX 
 @mixin flex-center($direction: row, $justify: center, $align: center) {
+
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
+
 }

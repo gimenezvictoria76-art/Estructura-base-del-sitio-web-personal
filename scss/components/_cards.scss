@@ -4,14 +4,37 @@
 .card {
   box-shadow: $shadow-suave;
   border-radius: $borde-redondeado;
-  padding: $espacio-base * 1.2; // Operador aritmético
-  @include transicion-suave(transform, 0.3s); // Invoca mixin
+  padding: $espacio-base * 1.2;
+
+  @include transicion-suave(transform, 0.3s);
 
   &:hover {
     transform: translateY(-5px);
   }
 
-  @include responder-a(mobile) { // Invoca mixin
+  @include responder-a(mobile) {
     margin-bottom: $espacio-base * 1;
   }
+}
+
+// Barras de habilidades
+
+.progress-custom {
+  height: 10px;
+}
+
+.progress-html {
+  width: 85% !important;
+}
+
+.progress-css {
+  width: 80% !important;
+}
+
+.progress-bootstrap {
+  width: 75% !important;
+}
+
+.progress-git {
+  width: 70% !important;
 }

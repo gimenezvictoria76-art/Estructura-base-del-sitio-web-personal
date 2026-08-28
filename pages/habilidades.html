@@ -1,138 +1,268 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- SEO ÚNICO -->
+  <meta name="description"
+    content="Descubrí las habilidades técnicas y blandas de Victoria Gimenez: HTML5, CSS3, SCSS, Bootstrap, Git y más." />
+  <meta name="keywords"
+    content="habilidades web, frontend, HTML5, SCSS, Bootstrap, Git, Victoria Gimenez" />
+
   <!-- AOS CSS -->
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  
-  <!-- BOOTSTRAP -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <link rel="stylesheet" href="../assets/main.css">
+  <!-- BOOTSTRAP CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- CSS COMPILADO -->
+  <link rel="stylesheet" href="../styles/main.css" />
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
 
   <title>Victoria Gimenez - Habilidades</title>
 </head>
+
 <body>
+
+  <!-- HEADER / NAVBAR -->
   <header>
-   <nav class="navbar navbar-expand-lg navbar-custom">
-    <div class="container">
-        
-        <a class="navbar-brand" href="/index.html">Victoria Gimenez</a>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+
+        <a class="navbar-brand" href="../index.html">
+          Victoria Gimenez
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ms-auto">
-        <!-- El "../" saca al navegador de la carpeta pages hacia la raíz -->
-        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="sobre-mi.html">Sobre mí</a></li>
-        <li class="nav-item"><a class="nav-link" href="habilidades.html">Habilidades</a></li>
-        <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
-        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-    </ul>
-</div>
-    </div>
-</nav>
+          <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="sobre-mi.html">Sobre mí</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="habilidades.html">Habilidades</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="proyectos.html">Proyectos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </nav>
   </header>
 
-  <!-- Contenedor fluido -->
+  <!-- CONTENIDO PRINCIPAL -->
   <main class="container py-5">
 
     <div class="text-center mb-5">
-      <h2 class="text-center mb-4" data-aos="fade-down" data-aos-duration="800">Mis Habilidades</h2>
-      <p class="text-muted">El conjunto de herramientas técnicas y aptitudes profesionales que aplico en cada proyecto.</p>
+      <h2
+        class="text-center mb-4"
+        data-aos="fade-down"
+        data-aos-duration="800"
+      >
+        Mis Habilidades
+      </h2>
+
+      <p class="text-muted">
+        El conjunto de herramientas técnicas y aptitudes profesionales que aplico en cada proyecto.
+      </p>
     </div>
 
-    
     <div class="row g-5 align-items-center">
-      
-      <!-- COLUMNA IZQUIERDA -->
-      <section class="col-12 col-lg-6"data-aos="zoom-in" data-aos-delay="100">
+
+      <!-- HABILIDADES TÉCNICAS -->
+      <section
+        class="col-12 col-lg-6"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+      >
+
         <div class="p-4 bg-white rounded shadow-sm border">
-          <h3 class="h4 mb-4 text-secondary border-bottom pb-2">💻 Habilidades Técnicas</h3>
-          
-          <!-- Skill 1 -->
+
+          <h3 class="h4 mb-4 text-secondary border-bottom pb-2">
+            💻 Habilidades Técnicas
+          </h3>
+
+          <!-- HTML5 -->
           <div class="mb-3">
+
             <div class="d-flex justify-content-between mb-1">
               <span class="fw-medium">HTML5</span>
               <span class="text-muted">85%</span>
             </div>
-            <div class="progress" style="height: 10px;">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+
+            <div class="progress progress-custom">
+              <div
+                class="progress-bar bg-success progress-html"
+                role="progressbar"
+                aria-valuenow="85"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
             </div>
+
           </div>
 
-          <!-- Skill 2 -->
+          <!-- CSS3 -->
           <div class="mb-3">
+
             <div class="d-flex justify-content-between mb-1">
               <span class="fw-medium">CSS3 & Layouts (Grid/Flexbox)</span>
               <span class="text-muted">80%</span>
             </div>
-            <div class="progress" style="height: 10px;">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+
+            <div class="progress progress-custom">
+              <div
+                class="progress-bar bg-success progress-css"
+                role="progressbar"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
             </div>
+
           </div>
 
-          <!-- Skill 3 -->
+          <!-- BOOTSTRAP -->
           <div class="mb-3">
+
             <div class="d-flex justify-content-between mb-1">
               <span class="fw-medium">Bootstrap Framework</span>
               <span class="text-muted">75%</span>
             </div>
-            <div class="progress" style="height: 10px;">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+
+            <div class="progress progress-custom">
+              <div
+                class="progress-bar bg-success progress-bootstrap"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
             </div>
+
           </div>
 
-          <!-- Skill 4 -->
+          <!-- GIT -->
           <div class="mb-3">
+
             <div class="d-flex justify-content-between mb-1">
               <span class="fw-medium">Git & Control de Versiones</span>
               <span class="text-muted">70%</span>
             </div>
-            <div class="progress" style="height: 10px;">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+
+            <div class="progress progress-custom">
+              <div
+                class="progress-bar bg-success progress-git"
+                role="progressbar"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
             </div>
+
           </div>
+
         </div>
       </section>
 
-      <!-- COLUMNA DERECHA -->
+      <!-- COMPETENCIAS PERSONALES -->
       <section class="col-12 col-lg-6">
+
         <div class="p-4 bg-light rounded shadow-sm border mb-4">
-          <h3 class="h4 mb-4 text-secondary border-bottom pb-2">🌱 Competencias Personales</h3>
-          
+
+          <h3 class="h4 mb-4 text-secondary border-bottom pb-2">
+            🌱 Competencias Personales
+          </h3>
+
           <ul class="list-group list-group-flush">
+
             <li class="list-group-item bg-transparent px-0 py-3 d-flex align-items-center">
-              <span class="badge bg-success rounded-circle p-2 me-3">✓</span>
+              <span class="badge bg-success rounded-circle p-2 me-3">
+                ✓
+              </span>
+
               <div>
-                <strong class="d-block">Trabajo en equipo</strong>
-                <small class="text-muted">Integración fluida en entornos colaborativos y dinámicos.</small>
+                <strong class="d-block">
+                  Trabajo en equipo
+                </strong>
+
+                <small class="text-muted">
+                  Integración fluida en entornos colaborativos y dinámicos.
+                </small>
               </div>
             </li>
+
             <li class="list-group-item bg-transparent px-0 py-3 d-flex align-items-center">
-              <span class="badge bg-success rounded-circle p-2 me-3">✓</span>
+              <span class="badge bg-success rounded-circle p-2 me-3">
+                ✓
+              </span>
+
               <div>
-                <strong class="d-block">Aprendizaje rápido y continuo</strong>
-                <small class="text-muted">Capacidad para asimilar herramientas digitales a gran velocidad.</small>
+                <strong class="d-block">
+                  Aprendizaje rápido y continuo
+                </strong>
+
+                <small class="text-muted">
+                  Capacidad para asimilar herramientas digitales a gran velocidad.
+                </small>
               </div>
             </li>
+
             <li class="list-group-item bg-transparent px-0 py-3 d-flex align-items-center">
-              <span class="badge bg-success rounded-circle p-2 me-3">✓</span>
+              <span class="badge bg-success rounded-circle p-2 me-3">
+                ✓
+              </span>
+
               <div>
-                <strong class="d-block">Responsabilidad y compromiso</strong>
-                <small class="text-muted">Foco constante en la prolijidad y cumplimiento de objetivos.</small>
+                <strong class="d-block">
+                  Responsabilidad y compromiso
+                </strong>
+
+                <small class="text-muted">
+                  Foco constante en la prolijidad y cumplimiento de objetivos.
+                </small>
               </div>
             </li>
+
           </ul>
+
         </div>
       </section>
 
@@ -140,37 +270,66 @@
 
   </main>
 
-  <!--- FOOTER --->
+  <!-- FOOTER -->
   <footer class="bg-light text-center py-4 mt-5">
+
     <div class="container">
-      <p class="mb-2">© 2026 Victoria Gimenez</p>
-      <h3 class="h5 mb-3">Contacto</h3>
+
+      <p class="mb-2">
+        © 2026 Victoria Gimenez
+      </p>
+
+      <h3 class="h5 mb-3">
+        Contacto
+      </h3>
 
       <ul class="list-inline mb-0">
+
         <li class="list-inline-item mx-3">
-          <a href="https://www.instagram.com/vickygimenez_" target="_blank" class="text-decoration-none text-dark">
+          <a
+            href="https://www.instagram.com/vickygimenez_"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-decoration-none"
+          >
             Instagram
           </a>
         </li>
+
         <li class="list-inline-item mx-3">
-          <a href="https://github.com/gimenezvictoria76-art" target="_blank" class="text-decoration-none text-dark">
+          <a
+            href="https://github.com/gimenezvictoria76-art"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-decoration-none"
+          >
             GitHub
           </a>
         </li>
+
       </ul>
+
     </div>
+
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
 
-<!-- AOS JavaScript -->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800, 
-    once: true    
-  });
-</script>
+  <!-- AOS JavaScript -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
 
 </body>
+
 </html>

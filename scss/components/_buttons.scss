@@ -1,42 +1,47 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
-// 1. PLACEHOLDER CON OPERADOR ARITMÉTICO
+//  PLACEHOLDER CON OPERADOR ARITMÉTICO
 %btn-base {
   display: inline-block;
-  padding: ($espacio-base * 0.75) ($espacio-base * 1.5); // Operación aritmética con variable
+  padding: ($espacio-base * 0.75) ($espacio-base * 1.5); 
   border-radius: 8px;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
   border: none;
-  @include transicion-suave(all, 0.3s); // Invoca mixin
+  @include transicion-suave(all, 0.3s); 
 }
 
 // 2. USO DE @extend CON PLACEHOLDER
 .btn-principal {
   @extend %btn-base;
   background-color: $color-primario;
-  color: #ffffff;
+  color: $color-blanco;
 
   &:hover {
     transform: translateY(-2px);
   }
 
-  @include responder-a(mobile) { // Invoca mixin
+  @include responder-a(mobile) {
     width: 100%;
   }
 }
 
 .btn-secundario {
+
   @extend %btn-base;
+
   background-color: transparent;
   border: 2px solid $color-primario;
   color: $color-primario;
 
   &:hover {
+
     background-color: $color-primario;
-    color: #ffffff;
+    color: $color-blanco;
+
   }
+
 }
