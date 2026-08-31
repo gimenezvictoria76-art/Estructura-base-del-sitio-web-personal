@@ -1,24 +1,39 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 .navbar-custom {
-  background-color: $color-oscuro; 
+  background-color: $color-primario !important; // Fondo Verde Petróleo #245C5A
   padding: 1rem 0;
+  margin-top: 0 !important; // Elimina cualquier margen superior
+  border-radius: 0 !important;
 
   .navbar-brand {
-    color: $color-blanco;
-    font-weight: bold;
+    color: $color-blanco !important;
+    font-weight: 700;
+    font-size: 1.4rem;
     
     &:hover {
-      color: $color-primario; 
+      color: $color-secundario !important; // Coral #D9785B al pasar el mouse
+      @include transicion-suave(color, 0.3s);
     }
   }
 
   .nav-link {
-    color: $color-claro;
-    transition: color 0.3s ease;
+    color: $color-blanco !important;
+    font-weight: 500;
+    margin: 0 5px;
+    
+    &:hover, &.active {
+      color: $color-secundario !important; // Coral al pasar el mouse o estar activo
+      @include transicion-suave(color, 0.3s);
+    }
+  }
 
-    &:hover {
-      color: $color-primario; 
+  .navbar-toggler {
+    border-color: $color-blanco;
+    
+    .navbar-toggler-icon {
+      filter: invert(1); // Hace las líneas del menú hamburguesa blancas
     }
   }
 }

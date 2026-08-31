@@ -1,17 +1,17 @@
 @use "../utilities/variables" as *;
 
 footer {
-  background-color: $color-claro !important;
-  padding: 20px 0;
-  width: 100%;
+  background-color: $color-oscuro; 
+  color: $color-blanco;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  text-align: center;
 
-  p, span, small {
-    color: $color-oscuro !important;
-    margin-bottom: 0;
-  }
-
-  h3 {
-    font-size: 1.1rem;
-    color: $color-primario !important;
+  a {
+    color: $color-secundario; // Coral #D9785B
+    
+    &:hover {
+      color: lighten(#D9785B, 10%);
+    }
   }
 }

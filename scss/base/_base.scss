@@ -1,15 +1,43 @@
 @use "../utilities/variables" as *;
 
-body, h1, h2, h3, h4, h5, h6 {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body {
   font-family: $fuente-principal;
+  background-color: $color-fondo; 
+  color: $color-oscuro;           
+  overflow-x: hidden;             
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $fuente-principal;
+  color: $color-primario;        
 }
 
 h2 {
   font-weight: 700;
-  color: $color-oscuro; // Usamos la variable en lugar de #212529
+  color: $color-oscuro;
 }
 
-// Giro 360 en img contacto
+a {
+  text-decoration: none;
+  color: $color-secundario;      
+  
+  &:hover {
+    color: darken(#D9785B, 10%);
+  }
+}
+
+// Giro 360 en img contacto (Animación nativa)
 @keyframes giroMoneda {
   from {
     transform: perspective(600px) rotateY(0deg);
@@ -31,4 +59,24 @@ h2 {
   &:hover {
     transform: perspective(600px) rotateY(360deg);
   }
+}
+
+/* Tamaño y recortado para fotos del carrusel */
+#carouselPortfolio {
+  max-width: 100%;
+}
+
+#carouselPortfolio .carousel-inner {
+  height: 350px !important; 
+}
+
+#carouselPortfolio .carousel-item {
+  height: 100% !important;
+}
+
+#carouselPortfolio .carousel-item img {
+  height: 100% !important;
+  width: 100% !important;
+  object-fit: cover !important; 
+  object-position: center !important;
 }

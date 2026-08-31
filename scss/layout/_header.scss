@@ -3,7 +3,7 @@
 
 header {
   width: 100%;
-  padding: $espacio-base * 0.8; // Operador aritmético
+  padding: $espacio-base * 0; // Operador aritmético
   @include transicion-suave(all, 0.3s);
 
   @include responder-a(mobile) { // Invoca mixin
