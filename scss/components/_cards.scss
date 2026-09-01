@@ -17,24 +17,34 @@
   }
 }
 
-// Barras de habilidades
-
+// Contenedor principal de las barras de progreso
 .progress-custom {
   height: 10px;
 }
 
+// Placeholder con estilos base reutilizables
+%barra-base {
+  border-radius: $borde-redondeado;
+  transition: width 0.6s ease;
+}
+
+// Aplicación del @extend a cada clase individual
 .progress-html {
+  @extend %barra-base;
   width: 85% !important;
 }
 
 .progress-css {
+  @extend %barra-base;
   width: 80% !important;
 }
 
 .progress-bootstrap {
+  @extend %barra-base;
   width: 75% !important;
 }
 
 .progress-git {
+  @extend %barra-base;
   width: 70% !important;
 }

@@ -1,162 +1,304 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<!-- HEAD -->
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
   <!-- SEO -->
-<meta name="description" content="Conocé más sobre Victoria Gimenez, mi historia, pasiones, perfil profesional y mi camino en el diseño web." />
-<meta name="keywords" content="Victoria Gimenez, sobre mí, diseñadora web, perfil profesional, diseño web, programación" />
+  <meta
+    name="description"
+    content="Conocé más sobre Victoria Gimenez, mi historia, pasiones, perfil profesional y mi camino en el diseño web."
+  />
+  <meta
+    name="keywords"
+    content="Victoria Gimenez, sobre mí, diseñadora web, perfil profesional, diseño web, programación"
+  />
 
   <!-- AOS CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- BOOTSTRAP CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
 
   <!-- CSS COMPILADO -->
-  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/main.css" />
 
   <!-- GOOGLE FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
 
-  <title>Victoria Gimenez - Sobre Mí</title>
+  <title>Victoria Gimenez - Sobre mí</title>
 </head>
 
 <body>
+
+  <!-- HEADER -->
   <header>
-   <nav class="navbar navbar-expand-lg navbar-custom">
-    <div class="container">
-        
-        <a class="navbar-brand" href="../index.html">Victoria Gimenez</a>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+
+        <a class="navbar-brand" href="../index.html">
+          Victoria Gimenez
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Abrir menú de navegación"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
 
-       <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ms-auto">
-        
-        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="sobre-mi.html">Sobre mí</a></li>
-        <li class="nav-item"><a class="nav-link" href="habilidades.html">Habilidades</a></li>
-        <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
-        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-    </ul>
-</div>
-    </div>
-</nav>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="sobre-mi.html">Sobre mí</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="habilidades.html">Habilidades</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="proyectos.html">Proyectos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </nav>
   </header>
 
-  
+
+  <!-- CONTENIDO PRINCIPAL -->
   <main class="container py-5">
 
-    <!-- SECCIÓN 1: Sobre mí-->
+    <!-- SECCIÓN SOBRE MÍ -->
     <section class="mb-5">
-      <h2 class="text-center mb-4"data-aos="fade-down" data-aos-duration="800">Sobre mí</h2>
-      
+
+      <h1
+        class="text-center mb-4"
+        data-aos="fade-down"
+        data-aos-duration="800"
+      >
+        Sobre mí
+      </h1>
+
       <div class="row align-items-center gy-4">
-        
-        <div class="col-12 col-lg-4 text-center">
+
+        <!-- FOTO -->
+        <div
+          class="col-12 col-lg-4 text-center"
+          data-aos="fade-right"
+          data-aos-duration="800"
+        >
           <figure class="figure">
-            <img src="../assets/mi-foto.jpeg" alt="Foto de Victoria Gimenez" class="img-fluid rounded-circle shadow" style="max-width: 200px;">
-            <figcaption class="figure-caption text-center mt-2">Proyectos actuales.</figcaption>
+
+            <img
+              src="../assets/mi-foto.jpeg"
+              alt="Foto de Victoria Gimenez"
+              class="img-fluid rounded-circle shadow imagen-sobre-mi"
+            />
+
+            <figcaption class="figure-caption text-center mt-2">
+              Victoria Gimenez
+            </figcaption>
+
           </figure>
         </div>
 
-        
-        <div class="col-12 col-lg-8">
-          <article class="p-3 bg-light rounded shadow-sm">
-            <p class="lead text-secondary">
-              ¡Hola! Soy Victoria Gimenez. Soy una persona activa y comprometida, apasionada 
-              por el deporte y el aprendizaje continuo. Actualmente estoy desarrollando mis 
-              conocimientos en programación y diseño web, combinando la creatividad con la búsqueda
-              constante de nuevos desafíos.
+
+        <!-- DESCRIPCIÓN -->
+        <div
+          class="col-12 col-lg-8"
+          data-aos="fade-left"
+          data-aos-duration="800"
+        >
+          <article class="p-4 bg-light rounded shadow-sm">
+
+            <p class="lead text-secondary mb-0">
+              ¡Hola! Soy Victoria Gimenez. Soy una persona activa y comprometida,
+              apasionada por el deporte y el aprendizaje continuo. Actualmente estoy
+              desarrollando mis conocimientos en programación y diseño web, combinando
+              la creatividad con la búsqueda constante de nuevos desafíos.
             </p>
+
           </article>
         </div>
+
       </div>
+
     </section>
 
-    <!-- SECCIÓN 2: Habilidades Cards  -->
+
+    <!-- SECCIÓN VALORES Y HABILIDADES -->
     <section class="mt-5">
-      <h2 class="text-center mb-4">Mis Valores y Habilidades</h2>
-      
+
+      <h2
+        class="text-center mb-4"
+        data-aos="fade-down"
+        data-aos-duration="800"
+      >
+        Mis Valores y Habilidades
+      </h2>
+
       <div class="row g-4">
 
-        <!-- Habilidad 1 -->
-        <div class="col-12 col-md-4">
-          <div class="card h-100 text-center border-0 shadow-sm bg-light">
+        <!-- HABILIDAD 1 -->
+        <div
+          class="col-12 col-md-4"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          <article class="card h-100 text-center border-0 shadow-sm bg-light">
+
             <div class="card-body">
-              <h3 class="h5 card-title text-success">🤝 Trabajo en equipo</h3>
-              <p class="card-text text-muted">Colaboración efectiva y comunicación clara para lograr objetivos comunes.</p>
+
+              <h3 class="h5 card-title text-success">
+                🤝 Trabajo en equipo
+              </h3>
+
+              <p class="card-text text-muted">
+                Colaboración efectiva y comunicación clara para lograr objetivos comunes.
+              </p>
+
             </div>
-          </div>
+
+          </article>
         </div>
 
-        <!-- Habilidad 2 -->
-        <div class="col-12 col-md-4">
-          <div class="card h-100 text-center border-0 shadow-sm bg-light">
+
+        <!-- HABILIDAD 2 -->
+        <div
+          class="col-12 col-md-4"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
+          <article class="card h-100 text-center border-0 shadow-sm bg-light">
+
             <div class="card-body">
-              <h3 class="h5 card-title text-success">⚡ Aprendizaje rápido</h3>
-              <p class="card-text text-muted">Adaptabilidad constante a nuevas tecnologías y metodologías de trabajo.</p>
+
+              <h3 class="h5 card-title text-success">
+                ⚡ Aprendizaje rápido
+              </h3>
+
+              <p class="card-text text-muted">
+                Adaptabilidad constante a nuevas tecnologías y metodologías de trabajo.
+              </p>
+
             </div>
-          </div>
+
+          </article>
         </div>
 
-        <!-- Habilidad 3 -->
-        <div class="col-12 col-md-4">
-          <div class="card h-100 text-center border-0 shadow-sm bg-light">
+
+        <!-- HABILIDAD 3 -->
+        <div
+          class="col-12 col-md-4"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
+          <article class="card h-100 text-center border-0 shadow-sm bg-light">
+
             <div class="card-body">
-              <h3 class="h5 card-title text-success">🎯 Responsabilidad</h3>
-              <p class="card-text text-muted">Compromiso absoluto con la calidad y los plazos de entrega de cada proyecto.</p>
+
+              <h3 class="h5 card-title text-success">
+                🎯 Responsabilidad
+              </h3>
+
+              <p class="card-text text-muted">
+                Compromiso absoluto con la calidad y los plazos de entrega de cada proyecto.
+              </p>
+
             </div>
-          </div>
+
+          </article>
         </div>
+
       </div>
+
     </section>
 
   </main>
 
+
   <!-- FOOTER -->
   <footer class="text-center py-4 mt-5">
+
     <div class="container">
+
       <p class="mb-2">© 2026 Victoria Gimenez</p>
+
       <h3 class="h5 mb-3">Contacto</h3>
 
-       <ul class="list-inline mb-0">
+      <ul class="list-inline mb-0">
+
         <li class="list-inline-item mx-3">
-          <a href="https://www.instagram.com/vickygimenez_"
-   target="_blank"
-   rel="noopener noreferrer">
-  Instagram
-</a>
+          <a
+            href="https://www.instagram.com/vickygimenez_"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
         </li>
+
         <li class="list-inline-item mx-3">
-          <a href="https://github.com/gimenezvictoria76-art"
-   target="_blank"
-   rel="noopener noreferrer">
-  GitHub
-</a>
+          <a
+            href="https://github.com/gimenezvictoria76-art"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
         </li>
+
       </ul>
+
     </div>
+
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-<!-- AOS JavaScript -->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800, 
-    once: true    
-  });
-</script>
+  <!-- BOOTSTRAP JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0t9V1KfLJ3yT2b8F7b3J5Z6kJ5l5m9M2X6rK7N8vQ9wX0Y1Z2A3B4C5D6E"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- AOS JavaScript -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
 
 </body>
+
 </html>
